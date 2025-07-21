@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tecnocampus.kingdom_game.KingdomTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2024-07-22T15:31:47" hostname="DESKTOP-AS8J4FR" time="1.436">
+  <properties/>
+  <testcase name="testGetRichestKingdom()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="1.029"/>
+  <testcase name="testInvestCitizens()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.045"/>
+  <testcase name="testCreateKingdom()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.015"/>
+  <testcase name="testStartProduction()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.02"/>
+  <testcase name="testGetKingdom()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.015"/>
+  <testcase name="testInvestCitizensWithoutEnoughGold()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.02"/>
+  <testcase name="testStartProductionWithInsufficientFood()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.022"/>
+  <testcase name="testCreateKingdomWithInvalidParams()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.009"/>
+  <testcase name="testInvestWithInvalidType()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.017"/>
+  <testcase name="testGetInvalidKingdom()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.015"/>
+  <testcase name="testAttackKingdomWithStrongDefender()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.033"/>
+  <testcase name="testAttackKingdomWithDefenderHavingMoreGold()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.037"/>
+  <testcase name="testAttackKingdomWithEmptyTarget()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.038"/>
+  <testcase name="testInvestFood()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.021"/>
+  <testcase name="testAttackKingdom()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.034"/>
+  <testcase name="testInvestFoodWithoutEnoughGold()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.012"/>
+  <testcase name="testStartProductionWithNoCitizens()" classname="com.tecnocampus.kingdom_game.KingdomTest" time="0.031"/>
+  <system-out><![CDATA[17:31:42.101 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tecnocampus.kingdom_game.KingdomTest]: KingdomTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:31:42.217 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tecnocampus.kingdom_game.KingdomGameApplication for test class com.tecnocampus.kingdom_game.KingdomTest
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2024-07-22T17:31:42.702+02:00  WARN 15968 --- [Kingdom_Game] [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Nebrera/.gradle/caches/modules-2/files-2.1/org.json/json/20211205/47032dcf2f69880f07dab3dc60b4b0ad97318308/json-20211205.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Nebrera/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-07-22T17:31:42.713+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] c.tecnocampus.kingdom_game.KingdomTest   : Starting KingdomTest using Java 22.0.1 with PID 15968 (started by Nebrera in C:\Users\Nebrera\IdeaProjects\age-of-kingdoms-exam-NebreTecnoCampus-main\AgeOfKingdoms)
+2024-07-22T17:31:42.714+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] c.tecnocampus.kingdom_game.KingdomTest   : No active profile set, falling back to 1 default profile: "default"
+2024-07-22T17:31:43.445+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-22T17:31:43.497+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2024-07-22T17:31:44.068+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-22T17:31:44.188+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-22T17:31:44.256+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-22T17:31:44.726+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-22T17:31:44.780+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-22T17:31:44.960+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@534d0e20
+2024-07-22T17:31:44.962+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-22T17:31:45.025+02:00  WARN 15968 --- [Kingdom_Game] [    Test worker] org.hibernate.dialect.Dialect            : HHH000511: The 5.7.21 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-07-22T17:31:45.873+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-22T17:31:45.943+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-22T17:31:46.425+02:00  WARN 15968 --- [Kingdom_Game] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-22T17:31:47.213+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-07-22T17:31:47.213+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-07-22T17:31:47.218+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-07-22T17:31:47.254+02:00  INFO 15968 --- [Kingdom_Game] [    Test worker] c.tecnocampus.kingdom_game.KingdomTest   : Started KingdomTest in 4.843 seconds (process running for 6.052)
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\Nebrera\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.16\4a451ee6484abac3a498df0f3b33ed00a6fced4d\byte-buddy-agent-1.14.16.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
